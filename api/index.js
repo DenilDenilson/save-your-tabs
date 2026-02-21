@@ -1,7 +1,7 @@
 import express from 'express';
-import testRoute from './routes/test';
-import saveRoute from './routes/save';
-import resolveRoute from './routes/resolve';
+import testRoute from './routes/test.js';
+import saveRoute from './routes/save.js';
+import resolveRoute from './routes/resolve.js';
 
 const app = express();
 
