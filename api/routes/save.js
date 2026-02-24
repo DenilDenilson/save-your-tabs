@@ -15,7 +15,7 @@ router.post('/save', async (req, res) => {
 		const id = crypto.randomBytes(6).toString('base64url');
 
 		await db.execute({
-			sql: 'INSERT INTO sessions (id, urls) VALUES (?, ?)',
+			sql: 'INSERT INTO "syt-sessions" (id, urls) VALUES (?, ?)',
 			args: [id, JSON.stringify(urls)],
 		});
 
