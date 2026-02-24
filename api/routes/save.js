@@ -19,6 +19,7 @@ router.post('/save', async (req, res) => {
 			args: [id, JSON.stringify(urls)],
 		});
 
+		console.log(`CREATED SESSION ${id}`);
 		res.json({ id });
 	} catch (err) {
 		console.error(err);
