@@ -5,6 +5,9 @@ const input = document.getElementById('session-link');
 // Estado inicial
 copyButton.disabled = true;
 
+const baseBackendUrl = 'http://localhost:3000';
+const baseWebUrl = 'https://syt.denil.com';
+
 saveButton.addEventListener('click', async () => {
 	try {
 		const tabs = await chrome.tabs.query({ currentWindow: true });
@@ -13,9 +16,25 @@ saveButton.addEventListener('click', async () => {
 			.map((tab) => tab.url)
 			.filter((url) => typeof url === 'string');
 
-		input.value = JSON.stringify(urls);
+		// Enviar al backend
+		const response = await fetch(`${baseBackendUrl}/api/save`, {
+			method: 'POST',
+			headers: {
+				'Content-type': 'application/json',
+			},
+			body: JSON.stringify({ urls }),
+		});
+
+		if (!response.ok) {
+			throw new Error('Backend error');
+		}
+		const data = await response.json();
+		const sessionLink = `${baseWebUrl}/${data.id}`;
+
+		input.value = sessionLink;
 		copyButton.disabled = false;
 	} catch (error) {
+		input.value = error.message;
 		console.error('Error saving tabs:', error);
 	}
 });
