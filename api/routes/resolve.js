@@ -9,7 +9,7 @@ router.get('/resolve/:id', async (req, res) => {
 		const { id } = req.params;
 
 		const result = await db.execute({
-			sql: 'SELECT urls FROM sessions WHERE id = ?',
+			sql: 'SELECT urls FROM "syt-sessions" WHERE id = ?',
 			args: [id],
 		});
 
