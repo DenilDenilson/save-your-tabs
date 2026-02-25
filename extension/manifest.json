@@ -8,5 +8,18 @@
 		"default_icon": "icon.png"
 	},
 	"permissions": ["tabs"],
-	"host_permissions": ["http://localhost:3000/*", "https://syt.denil.com/*"]
+	"host_permissions": ["http://localhost:3000/*", "https://syt.denil.com/*"],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://127.0.0.1:5500/*",
+				"http://localhost:5500/*",
+				"https://syt.denil.com/*"
+			],
+			"js": ["content.js"]
+		}
+	]
 }
