@@ -18,6 +18,7 @@ router.get('/resolve/:id', async (req, res) => {
 		}
 
 		const urls = JSON.parse(result.rows[0].urls);
+		console.log('Urls recuperadas ', urls);
 		res.json({ urls });
 	} catch (err) {
 		console.error(err);
