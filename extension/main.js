@@ -5,8 +5,8 @@ const input = document.getElementById('session-link');
 // Estado inicial
 copyButton.disabled = true;
 
-const baseBackendUrl = 'http://localhost:3000';
-const baseWebUrl = 'https://syt.denil.com';
+const baseBackendUrl = 'https://save-your-tabs.vercel.app/';
+const baseWebUrl = 'https://syt.denil.org';
 
 saveButton.addEventListener('click', async () => {
 	try {

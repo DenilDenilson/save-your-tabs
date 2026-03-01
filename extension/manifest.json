@@ -8,13 +8,16 @@
 		"default_icon": "icon.png"
 	},
 	"permissions": ["tabs"],
-	"host_permissions": ["https://save-your-tabs.vercel.app/*"],
+	"host_permissions": [
+		"https://save-your-tabs.vercel.app/*",
+		"https://syt.denil.org/*"
+	],
 	"background": {
 		"service_worker": "background.js"
 	},
 	"content_scripts": [
 		{
-			"matches": ["http://127.0.0.1:5500/*", "https://syt.denil.org/*"],
+			"matches": ["https://syt.denil.org/*"],
 			"js": ["content.js"]
 		}
 	]

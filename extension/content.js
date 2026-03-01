@@ -1,10 +1,12 @@
-// console.log('🔥 Content script cargado');
+console.log('🔥 Content script cargado');
+// console.log('CONTENT SCRIPT CARGADO');
+console.log('runtime:', chrome.runtime);
 
 window.addEventListener('message', (e) => {
 	if (e.source !== window) return;
 
 	if (e.data.type === 'OPEN_SESSION') {
-		// console.log('OPEN_SESSION launched');
+		console.log('OPEN_SESSION launched');
 		chrome.runtime.sendMessage({
 			type: 'OPEN_SESSION',
 			id: e.data.id,
