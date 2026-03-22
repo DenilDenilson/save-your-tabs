@@ -32,6 +32,7 @@ header {
     letter-spacing: -0.45px;
     color: #0F172A;
 }
+
 #install-button {
     color: #FFF;
     background-color: #0066FF;
@@ -45,4 +46,131 @@ header {
     text-decoration: none;
     font-size: medium;
     font-weight: 600;
+}
+
+/* MAIN */
+
+main {
+    background-color: #F6F7F8;
+    padding: 160px 128px 120px 128px;
+}
+
+main > .banner > h1 {
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: -1.8px;
+    font-weight: 800;
+    color: #0F172A;
+}
+
+main > .banner > h2 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 800;
+    color: #0066FF;
+}
+
+main > .banner > h5 {
+    max-width: 672px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    color: #0F172A;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+#see-work-button {
+    color: #334155;
+    background-color: #FFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+    padding: 10px 20px;
+    width: 220px;
+    height: 40px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+    border: solid 1px #E2E8F0;
+    gap: 8px;
+}
+
+.main-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+/* MAIN ACTION */
+.main-action-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #0F172A;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+#main-action-button {
+    color: #FFF;
+    background-color: #0066FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+    gap: 8px;
+    border: none;
+}
+
+.main-action-input-wraper {
+    color: #334155;
+    background-color: #FFF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+    width: 484px;
+    height: 48px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+    padding: 0 16px;
+    border: solid 2px #CBD5E1;
+    gap: 8px;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.main-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.main-action {
+    background-color: #FFF;
+    padding: 40px;
+    border-radius: 16px;
+    border: solid 1px #137FEC10;
+    box-shadow: 0px 4px 12px rgba(19, 127, 236, 0.1);
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 96px;
 }
