@@ -47,7 +47,7 @@
 						</svg>
 						<input type="text" id="session-link" placeholder="Pega tu link aquí" />
 					</div>
-					<button id="main-action-button">
+					<button id="main-action-button" id="open-btn">
 						<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M7.44375 8.2875L11.7 4.05L10.6313 2.98125L7.44375 6.16875L5.85 4.575L4.8 5.625L7.44375 8.2875ZM0 13.5V12H16.5V13.5H0ZM2.25 11.25C1.8375 11.25 1.48438 11.1031 1.19062 10.8094C0.896875 10.5156 0.75 10.1625 0.75 9.75V1.5C0.75 1.0875 0.896875 0.734375 1.19062 0.440625C1.48438 0.146875 1.8375 0 2.25 0H14.25C14.6625 0 15.0156 0.146875 15.3094 0.440625C15.6031 0.734375 15.75 1.0875 15.75 1.5V9.75C15.75 10.1625 15.6031 10.5156 15.3094 10.8094C15.0156 11.1031 14.6625 11.25 14.25 11.25H2.25ZM2.25 9.75H14.25V1.5H2.25V9.75ZM2.25 9.75V1.5V9.75Z" fill="white"/>
 						</svg>
@@ -93,13 +93,26 @@
 				</div>
 			</div>
 		</section>
-		<h1>SAVE YOUR TABS</h1>
-		<label for="">
-			Ingrese el link
-			<input id="session-link" type="text" />
-		</label>
-		<button id="open-btn">Abrir con extensión</button>
-		<p id="status"></p>
+		<footer class="footer">
+			<div class="footer-social">
+				<a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.086-.744.084-.729.084-.729 1.2.085 1.835 1.232 1.835 1.232 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.76-1.605-2.665-.304-5.467-1.332-5.467-5.93 0-1.31.466-2.382 1.235-3.222-.125-.303-.535-1.525.115-3.176 0 0 1.005-.322 3.3 1.23a11.5 11.5 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.655 1.65.245 2.873.12 3.176.77.84 1.23 1.912 1.23 3.222 0 4.61-2.807 5.625-5.48 5.92.43.37.81 1.096.81 2.21 0 1.595-.015 2.882-.015 3.277 0 .32.21.695.825.577C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/>
+					</svg>
+				</a>
+				<a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 24h5V7H0v17zM7.5 7h4.8v2.4h.1c.67-1.2 2.3-2.4 4.73-2.4 5.06 0 6 3.34 6 7.68V24h-5v-7.92c0-1.88-.03-4.3-2.62-4.3-2.62 0-3.02 2.04-3.02 4.16V24h-5V7z"/>
+					</svg>
+				</a>
+				<a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path d="M23.499 6.203c-.27-1.02-1.08-1.83-2.1-2.1C19.7 3.5 12 3.5 12 3.5s-7.7 0-9.4.603c-1.02.27-1.83 1.08-2.1 2.1C0 8.05 0 12 0 12s0 3.95.5 5.797c.27 1.02 1.08 1.83 2.1 2.1C4.3 20.5 12 20.5 12 20.5s7.7 0 9.4-.603c1.02-.27 1.83-1.08 2.1-2.1.5-1.847.5-5.797.5-5.797s0-3.95-.501-5.797zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+					</svg>
+				</a>
+			</div>
+			<p>© 2024 Save Your Tabs. Designed for productivity.</p>
+		</footer>
 	</body>
 	<script src="index.js"></script>
 </html>
