@@ -174,3 +174,67 @@ input {
     margin: 0 auto;
     margin-top: 96px;
 }
+
+/* MARKETING */
+.sup-marketing {
+    padding: 120px 128px;
+    background-color: #FBFCFD;
+}
+
+.marketing {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.marketing > .title {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.9px;
+    color: #0F172A;
+    margin-bottom: 16px;
+}
+
+.marketing > .description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0F172A;
+}
+
+.cards-container > .card {
+    width: 320px;
+    height: 256px;
+    padding: 32px;
+    background-color: #FFF;
+    border-radius: 16px;
+    border: solid 1px #E2E8F0;
+}
+
+.cards-container > .card > h6 {
+    font-size: 20px;
+    color: #0F172A;
+    margin: 16px 0 12px 0;
+}
+
+.cards-container > .card > p {
+    font-size: 16px;
+    color: #0F172A;
+    line-height: 1.5;
+}
+
+.cards-container > .card > .icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-content: center;
+    background-color: #0066FF10;
+    border-radius: 12px;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 48px;
+}
