@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    border-bottom: solid 1px #0066FF10;
+}
+
+.header-box {
+    height: 80px;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header-box > .logo {
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-box > .logo > p {
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: -0.45px;
+    color: #0F172A;
+}
+#install-button {
+    color: #FFF;
+    background-color: #0066FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;      /* vertical */
+    padding: 10px 20px;
+    width: 180px;
+    height: 40px;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 600;
+}
