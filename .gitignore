@@ -58,3 +58,6 @@ RELEASE.md
 __fixtures__/custom-modules-dir/**/fake_modules/
 __fixtures__/custom-modules-dir/cache/
 __fixtures__/custom-modules-dir/patches/
+
+## LLM IGNORE
+.codex
